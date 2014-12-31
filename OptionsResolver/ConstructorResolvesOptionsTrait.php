@@ -19,25 +19,25 @@ namespace Axstrad\Symfony\OptionsResolver;
  */
 trait ConstructorResolvesOptionsTrait
 {
-	use ResolvesOptionsTrait {
-		ResolvesOptionsTrait::resolveOptions as protected;
-	}
+    use ResolvesOptionsTrait {
+        ResolvesOptionsTrait::resolveOptions as protected;
+    }
 
 
-	/**
-	 * @param array $options
-	 */
-	public function __construct(array $options = array())
-	{
-		$this->setResolvedOptions(
-			$this->resolveOptions($options)
-		);
-	}
+    /**
+     * @param array $options
+     */
+    public function __construct(array $options = array())
+    {
+        $this->setResolvedOptions(
+            $this->resolveOptions($options)
+        );
+    }
 
-	/**
-	 * Define this method to process the resolved options.
-	 *
-	 * @param array $options
-	 */
-	abstract protected function setResolvedOptions(array $options);
+    /**
+     * Define this method to process the resolved options.
+     *
+     * @param array $options
+     */
+    abstract protected function setResolvedOptions(array $options);
 }
