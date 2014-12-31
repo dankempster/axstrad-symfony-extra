@@ -13,7 +13,6 @@
  */
 namespace Axstrad\Symfony\OptionsResolver\Tests;
 
-use Axstrad\Symfony\OptionsResolver\OptionsResolverTrait;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
