@@ -4,7 +4,6 @@ php:
   - 5.6
   - 7.0
   - 7.1
-  - hhvm
 env:
   - SYMFONY_VERSION="2.7.*"
   - SYMFONY_VERSION="2.8.*"
@@ -37,10 +36,6 @@ matrix:
   include:
     - php: 5.4
       env: SYMFONY_VERSION="2.6.*"
-
-  # Test the latest PHP and Symfony Next
-  allow_failures:
-    - php: hhvm
 
   fast_finish: true
 
