@@ -13,7 +13,7 @@
  */
 namespace Axstrad\Symfony\OptionsResolver\Tests;
 
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 
 /**
@@ -21,7 +21,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  */
 class ResolvesOptionsTestClass extends ResolvesOptionsAbstractTestClass
 {
-    protected function configureOptions(OptionsResolverInterface $resolver)
+    protected function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setRequired(array(
             'foo'
