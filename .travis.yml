@@ -62,3 +62,4 @@ branches:
   only:
     - develop
     - master
+    - 1.0
