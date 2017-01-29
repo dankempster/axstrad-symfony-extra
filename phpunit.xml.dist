@@ -10,7 +10,7 @@
 
     <testsuites>
         <testsuite name="Axstrad/Symfony/Filesystem">
-            <directory suffix="Test.php">FileSystem/Tests/</directory>
+            <directory suffix="Test.php">Filesystem/Tests/</directory>
         </testsuite>
 
         <testsuite name="Axstrad/Symfony/Finder">
