@@ -13,8 +13,6 @@
 namespace Axstrad\Symfony\OptionsResolver;
 
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-
 
 /**
  * Axstrad\Symfony\OptionsResolver\ResolvesOptionsTrait
@@ -37,8 +35,8 @@ trait ResolvesOptionsTrait
     /**
      * Define this method to configure the OptionsResolver.
      *
-     * @param  OptionsResolverInterface $resolver
+     * @param  OptionsResolver $resolver
      * @return void
      */
-    abstract protected function configureOptions(OptionsResolverInterface $resolver);
+    abstract protected function configureOptions(OptionsResolver $resolver);
 }

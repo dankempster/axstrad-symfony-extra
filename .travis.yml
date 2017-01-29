@@ -7,31 +7,26 @@ php:
   - 7.0
   - 7.1
 env:
-  - SYMFONY_VERSION="2.8.*"
+  - SYMFONY_VERSION="3.2.*"
 matrix:
   fast_finish: true
   include:
     # Test lowest level dependencies are correct
-    - php: 5.4
+    - php: 5.5
       env: LOWEST=1
 
-    # Symfony LTS versions on lowest PHP
-    - php: 5.4
-      env: SYMFONY_VERSION="2.7.*" # 05/2018
-    - php: 5.4
-      env: SYMFONY_VERSION="2.8.*" # 11/2018
-
-    # Old LTS I still want to support
-    - php: 5.4
-      env: SYMFONY_VERSION="2.3.*" # 05/2016
-
     # Old non-LTS I still want to support
-    - php: 5.4
-      env: SYMFONY_VERSION="2.4.*"
-    - php: 5.4
-      env: SYMFONY_VERSION="2.5.*"
-    - php: 5.4
-      env: SYMFONY_VERSION="2.6.*"
+    - php: 5.5
+      env: SYMFONY_VERSION="3.1.*" # 01/2017
+
+    # Development versions
+    - php: 5.5
+      env: SYMFONY_VERSION="3.3.*@dev" # 05/2017 - 01/2018
+    - php: 7.1
+      env: SYMFONY_VERSION="3.3.*@dev"
+
+  allow_failures:
+    - env: SYMFONY_VERSION="3.3.*@dev"
 
 cache:
   directories:
