@@ -1,6 +1,6 @@
 {
     "name": "axstrad/symfony-extra",
-    "description": "Convenience abstract class and traits when using Symonfy'scComponents",
+    "description": "Convenience abstract class and traits when using Symonfy's Components",
     "type": "library",
     "keywords": [],
     "license": "MIT",
